@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home {
+  padding: 20px;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font: 500;
+  font-size: larger;
+  font-family: Arial, sans-serif;
+  background-color :rgb(248, 240, 229);
+}
+
+.navbar {
+  display: flex;
+  background-color: #2e2e2e;
+  padding: 10px;
+  padding-left: 43%;
+}
+ 
+.navbar a {
+  color: rgb(252, 236, 236);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: rgb(248, 198, 198);
+  text-shadow: 0.5px 0.5px 0.5px rgb(248, 198, 198);
+}
+.about {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+   .navbar {
+    gap: 19px;
+    margin-left: -50px;
+   }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+}
