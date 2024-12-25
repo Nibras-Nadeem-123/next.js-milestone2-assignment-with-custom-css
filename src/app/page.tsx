@@ -1,22 +1,14 @@
-"use client"
-import Home from "@/components/home/page";
-import About from "@/components/about/page";
-import Contact from "@/components/contact/page";
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import React from 'react';
  
-export default function App() {
+const Home = () => {
   return (
-    <Router>
-      <nav className="navbar">
-         <Link to={"/"}>Home</Link>
-         <Link to={"/about"}>About</Link>
-         <Link to={"/contact"}>Contact</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} /> 
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <div className="home">
+      
+      <h1>Welcome to Our Website</h1>
+      <p>This is the Home Page.</p>
+    </div>
   );
-}
+};
+
+export default Home;
+
